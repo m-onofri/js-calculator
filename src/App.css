@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#container {
+  width: 330px;
+  background-color: #999;
+  display: grid;
+  margin: 2rem auto;
+  padding: 5px;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(7, 65px);
+  grid-template-areas:
+    "display display display display"
+    "display display display display"
+    "clear percentage divide multiply"
+    "seven eight nine subtract"
+    "four five six add"
+    "one two three equals"
+    "zero zero decimal equals";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#result {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  grid-area: display;
+  background-color: #222;
+  margin-bottom: 5px;
+  padding: 10px;
+  color: #EEE;
+}
+
+#expression {
+  width: 100%;
+  height: 65px;
+  text-align: right;
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#display {
+  text-align: right;
+  font-family: 'VT323', monospace;
+  font-size: 48px;
+}
+
+#clear {grid-area: clear;}
+#percentage {grid-area: percentage;}
+#divide {grid-area: divide;}
+#seven {grid-area: seven;}
+#eight {grid-area: eight;}
+#nine {grid-area: nine;}
+#multiply {grid-area: multiply;}
+#subtract {grid-area: subtract;}
+#four {grid-area: four;}
+#five {grid-area: five;}          
+#six {grid-area: six;}
+#add {grid-area: add;}
+#zero {grid-area: zero;}
+#decimal {grid-area: decimal;}
+#equals {grid-area: equals;}
+
+.button {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 1px solid #000;
+  font-family: 'B612 Mono', monospace;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  border: 1px solid #eee;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.number {
+  background-color: #A1DBB2;
+}
+
+.operator {
+  background-color: #FACA66;
+}
+
+.specialOperator {
+  background-color: #F7A541;
+}
+
+.equals {
+  background-color: #F45D4C;
 }
