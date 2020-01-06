@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# javaScript Calculator
 
-## Available Scripts
+In this project I created a calculator that was able to perform the basic aritmethic operations  (addition, subtraction, division and multiplication).
+This project is from the freeCodeCamp course and it's based on the React library.
 
-In the project directory, you can run:
 
-### `npm start`
+## How to clone the app locally...
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Clone the git repository in the folder of your choice:
+```
+git clone https://github.com/m-onofri/js-calculator.git
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Install the packages:
+```
+cd js-calculator
+npm install
+```
 
-### `npm test`
+Run the server:
+```
+npm start
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In your browser, go to http://localhost:3000/, and play the game.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ...or watch it live!
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+You can play the game [here](https://m-onofri.github.io/js-calculator/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Main features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* The calculator is able to perform basic aritmethic operations (addition, subtraction, division and multiplication).
+* The display show the complete expression and the current value.
+* When you press the "=" button, you get the result of the expression displayed on the screen.
+* You can use the result to make another expression.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Cross-browser consistency 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The project was checked on MacOS in Chrome, Firefox, Opera and Safari, and on these browsers it works properly.
